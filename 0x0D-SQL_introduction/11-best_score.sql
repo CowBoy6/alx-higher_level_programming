@@ -1,4 +1,3 @@
-11-best_score.sql
 -- Lists all records in the table second_table with a score >= 10 in my MySQL server.
 SELECT `score`, `name`
 FROM `second_table`
