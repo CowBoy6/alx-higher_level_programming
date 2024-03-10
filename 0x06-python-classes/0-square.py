@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Square class defination"""
+
+
 class Square:
-    def __init__(self) -> None:
-        pass
+    """Square class body"""
+    pass
