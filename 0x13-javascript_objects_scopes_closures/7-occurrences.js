@@ -1,6 +1,6 @@
 #!/usr/bin/node
-module.exports = function (A, n) {
+module.exports = function (list, searchElement) {
   let occurence = 0;
-  for (let i = 0; i < A.length; i++) { if (A[i] === n) { occurence++; } }
+  for (let i = 0; i < list.length; i++) { if (list[i] === searchElement) { occurence++; } }
   return occurence;
 };
