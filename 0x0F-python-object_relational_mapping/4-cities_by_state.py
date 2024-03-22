@@ -9,7 +9,7 @@ if __name__ == "__main__":
     cur = db.cursor()
     match = sys.argv[4]
     cur.execute("""Select cities.id ,cities.name ,states.name from cities 
-                 inner join states on cities.state_id= states.id ; """)
+                 inner join states on cities.state_id=states.id""")
     rows = cur.fetchall()
     for row in rows:
         print(row)
