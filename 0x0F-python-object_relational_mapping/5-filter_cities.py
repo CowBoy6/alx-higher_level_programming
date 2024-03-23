@@ -13,6 +13,6 @@ if __name__ == "__main__":
                  where states.name=%s""", (sys.argv[4], ))
     rows = cur.fetchall()
     for row in rows:
-        print(row, end=", ")
+        print(row[0], end=", ")
     cur.close()
     db.close()
