@@ -1,3 +1,3 @@
-a=[(6),(7),(7)]
-tmp = list(row[0] for row in a)
-print(*tmp, sep=", ")
+a=[(1, 'a'), (2, 'b'), (3, 'c')]
+for i in a:
+    print(f"{i[0]},",end=" ")
