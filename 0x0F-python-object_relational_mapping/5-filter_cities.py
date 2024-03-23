@@ -12,7 +12,7 @@ if __name__ == "__main__":
                  on cities.state_id= states.id
                  where states.name=%s""", (sys.argv[4], ))
     rows = cur.fetchall()
-    for row in rows:
-        print(row[0], end=", ")
+    tmp = list(row[0] for row in rows)
+    print(*tmp, sep=", ")
     cur.close()
     db.close()

@@ -1,3 +1,3 @@
-a=[6,3,2,5,6]
-for i in a:
-    print(i,end=", ")
+a=[(6),(7),(7)]
+tmp = list(row[0] for row in a)
+print(*tmp, sep=", ")
